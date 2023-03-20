@@ -52,7 +52,7 @@ if($message === 'hi'){
 
 include_once("../helper/koneksi.php");
 include_once("../helper/function.php");
-// $message = 'test';
+$message = 'about us';
 $query = mysqli_query($koneksi,"select * from autoreplies where keyword = '$message' ");
 $cek = mysqli_num_rows($query);
 if($cek==0){
