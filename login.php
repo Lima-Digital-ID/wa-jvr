@@ -45,65 +45,38 @@ if(post("username")){
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" />
 </head>
 
-<body class="bg-gradient-primary">
-
-    <div class="container">
-
-        <!-- Outer Row -->
-        <div class="row justify-content-center-login">
-
-            <div class="col-xl-4 col-lg-12 col-md-9">
-
-                <div class="card o-hidden border-0 shadow-lg my-5">
-                    <div class="card-body p-0">
-                        <!-- Nested Row within Card Body -->
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="p-4">
-                                    <div class="card-body text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Login</h1>
-                                    </div>
-                                    <form class="user" method="POST">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter Username..." name="username" value="" autocomplete="new-password">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password" name="password" value="">
-                                        </div>
-                                        <button type="submit" class="btn btn-primary btn-user btn-block">
-                                            Login
-                                        </button>
-                                        
-                                    </form>
-                                    <div class="card-body text-center">
-                                        <a  href="https://javavolcanorendezvous.com" target="_blank">JVR WA</a>
-                                    </div>
-                                    <!--<div class="alert alert-success text-center" role="alert">Multi Device Support!</div>-->
-                                </div>
-                                <!--<div class="card shadow mb-4">-->
-                                <!--    <div class="card-header py-3 text-center">-->
-                                <!--        <h6 class="m-0 font-weight-bold text-danger">UPDATE!!!</h6>-->
-                                <!--    </div>-->
-                                <!--    <div class="card-body text-center">-->
-                                <!--        Untuk multiple devices silakan klik link berikut: <a  href="https://bermainapi.com/daftar.php" target="_blank">bermainapi.com</a>-->
-                                <!--    </div>-->
-                                <!--</div>-->
-                            </div>
+<body>
+    <section id="login">
+        <div class="left">
+        
+        </div>
+        <div class="right">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-7">
+                        <img class="mb-3" src="img/common/jvto.png" alt="">
+                        <h4 class="font-weight-bold mb-4">Welcome to JVR WA APP <br> Sign in to continue</h4>
+                        <div class="card p-4">
+                            <form class="user" method="POST">
+                                <label for="" class="font-weight-bold"><span class="fa fa-user mr-2"></span> Username</label>
+                                <input type="text" name="username" class="form-control" placeholder='Masukkan username'>
+                                <br>
+                                <label for="" class="font-weight-bold"><span class="fa fa-lock mr-2"></span> Password</label>
+                                <input type="password" name="password" class="form-control" placeholder='Masukkan password'>
+                                <br>
+                                <button class="btn-block btn btn-primary py-3 font-weight-bold">Sign In</button>
+                            </form>
                         </div>
+                        <p class="mt-3 text-center" style="opacity:0.3">@Copyright Java Volcano Rendezvous</p>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
-    </div>
+    </section>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>

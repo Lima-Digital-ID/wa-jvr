@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;    
+}
+#login{
+    display:flex;
+    background : #f6f8fd;
+}
+#login .left{
+    width : 40%;
+    height : 100vh;
+    background:url("../img/common/bg-wa.jpg");
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+#login .right{
+    width:60%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    padding : 1rem;
+    color:#020202;
+}
+#login .right img{
+    width : 80px !important;
+}
+#login .right .fa{
+    color:#4e73df;
+}
+#login .right label{
+    margin-bottom:10px;
+}
+.justify-content-center{
+    justify-content:center !important;
+}
+#login .form-control{
+    padding:.700rem .75rem;
+}
+@media (max-width: 576px) {
+    #login .left{
+        display:none;
+    }
+    #login .right{
+        width:100%;
+    }
+}
