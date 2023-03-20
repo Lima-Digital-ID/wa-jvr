@@ -27,9 +27,9 @@ function button($param){
     ];
     $pesan = "halo,".$line."ini baris baru";
     $buttonMessage = [
-        'text' => $param['msg'], // pesan utama nya
+        'text' => $param['text'], // pesan utama nya
         'footer' => $param['footer'], // pesan footernya, 
-        'buttons' => $param['button'],
+        'buttons' => $param['buttons'],
         'headerType' => 1 // biarkan default
     ];
     return $buttonMessage;
@@ -69,7 +69,7 @@ if($cek==0){
     if($cek2!=0){
         $d = mysqli_fetch_assoc($sql);
 
-        $arrData = json_decode($d['reply']);
+        $arrData = (array)json_decode($d['reply']);
 
         if($d['type'] == 'text'){
             // $reply = substr($d['reply'],9);
@@ -84,6 +84,7 @@ if($cek==0){
         }
         else if($d['type'] == 'button'){
             print_r($arrData);
+            // $respon = button($arrData);
         }
     }
 }
