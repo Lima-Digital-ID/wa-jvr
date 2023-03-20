@@ -84,7 +84,7 @@ if($cek==0){
         }
         else if($d['type'] == 'button'){
         }
-        print_r($arrData);
+        echo $d['reply'];
     }
 }
 
