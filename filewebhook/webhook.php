@@ -62,7 +62,7 @@ if($cek==0){
     $where = "where ";
     foreach ($msg as $key => $value) {
         $or = $count != ($key+1) ? 'or ' : '';
-        $where .= "keyword like '$value%' $or";
+        $where .= "keyword like '%$value' $or";
     }
     $querySQL = "select * from autoreplies $where";
     $sql = mysqli_query($koneksi, $querySQL);
