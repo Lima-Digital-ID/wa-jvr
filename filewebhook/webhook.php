@@ -17,7 +17,7 @@ function gambar(){
         'caption' => 'Logo whatsapp!'
     ];
 }
-function button(){
+function button($param){
     
     // maximal 3 button
     $buttons = [
@@ -25,12 +25,11 @@ function button(){
         ['buttonId' => 'id2', 'buttonText' => ['displayText' => 'BUTTON 2'], 'type' => 1], // button 2
         ['buttonId' => 'id3', 'buttonText' => ['displayText' => 'BUTTON 3'], 'type' => 1], // button 3
     ];
-    $line = "\r\n";
     $pesan = "halo,".$line."ini baris baru";
     $buttonMessage = [
-        'text' => $pesan, // pesan utama nya
-        'footer' => 'ini pesan footer', // pesan footernya, 
-        'buttons' => $buttons,
+        'text' => $param['msg'], // pesan utama nya
+        'footer' => $param['footer'], // pesan footernya, 
+        'buttons' => $param['button'],
         'headerType' => 1 // biarkan default
     ];
     return $buttonMessage;
@@ -79,9 +78,13 @@ if($cek==0){
                 $newLine = $i != 0 ? "\r\n" : "";
                 $textMsg .= $newLine.$v;
             }
+            echo json_decode($d['reply']);
             $respon = kirim($textMsg);
+        }
+        else if($d['type'] == 'button'){
+
         }
     }
 }
 
-echo json_encode($respon);
+// echo json_encode($respon);
