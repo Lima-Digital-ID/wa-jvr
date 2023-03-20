@@ -78,7 +78,7 @@ if($cek==0){
                 $newLine = $i != 0 ? "\r\n" : "";
                 $textMsg .= $newLine.$v;
             }
-            echo $d['reply'];
+            print_r(json_decode($d['reply']));
             $respon = kirim($textMsg);
         }
         else if($d['type'] == 'button'){
