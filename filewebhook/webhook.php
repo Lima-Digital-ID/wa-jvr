@@ -52,7 +52,7 @@ if($message === 'hi'){
 
 include_once("../helper/koneksi.php");
 include_once("../helper/function.php");
-$message = 'menu';
+$message = 'menu a';
 $query = mysqli_query($koneksi,"select * from autoreplies where keyword = '$message' ");
 $cek = mysqli_num_rows($query);
 if($cek==0){
@@ -83,8 +83,8 @@ if($cek==0){
             $respon = kirim($textMsg);
         }
         else if($d['type'] == 'button'){
+            print_r($arrData);
         }
-        echo $d['reply'];
     }
 }
 
