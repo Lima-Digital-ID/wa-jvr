@@ -83,8 +83,7 @@ if($cek==0){
             $respon = kirim($arrData['text']);
         }
         else if($d['type'] == 'button'){
-            print_r($arrData);
-            // $respon = button($arrData);
+            $respon = button($arrData);
         }
     }
 }
