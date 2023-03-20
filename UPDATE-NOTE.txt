@@ -1,0 +1,8 @@
+- buat subdomain baru
+- upload file update zip ke direktori
+- buat database baru dan upload file bamd.sql ke db
+- sesuaikan setingan sesuai database yang dibuat di .env dan helper/koneksi.php
+- buat aplikasi nodejs, pake versi 16
+- sesuaikan setingan seperti biasa, lalu npm install 
+- setelah selesai, buka url gateway nya lalu ke pengaturan, tambahkan nomor agar qr bisa ke load. 
+- selesai 

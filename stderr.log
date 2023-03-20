@@ -1,0 +1,31 @@
+/home/javavolc/nodevenv/wa.javavolcanorendezvous.com/16/lib/node_modules/@adiwajshing/baileys/lib/Utils/generics.js:157
+            .then(() => reject(new boom_1.Boom('Timed Out', {
+                               ^
+
+Error: Timed Out
+    at /home/javavolc/nodevenv/wa.javavolcanorendezvous.com/16/lib/node_modules/@adiwajshing/baileys/lib/Utils/generics.js:157:32 {
+  data: {
+    stack: 'Error\n' +
+      '    at promiseTimeout (/home/javavolc/nodevenv/wa.javavolcanorendezvous.com/16/lib/node_modules/@adiwajshing/baileys/lib/Utils/generics.js:152:19)\n' +
+      '    at waitForMessage (/home/javavolc/nodevenv/wa.javavolcanorendezvous.com/16/lib/node_modules/@adiwajshing/baileys/lib/Socket/socket.js:100:61)\n' +
+      '    at query (/home/javavolc/nodevenv/wa.javavolcanorendezvous.com/16/lib/node_modules/@adiwajshing/baileys/lib/Socket/socket.js:123:22)\n' +
+      '    at getAvailablePreKeysOnServer (/home/javavolc/nodevenv/wa.javavolcanorendezvous.com/16/lib/node_modules/@adiwajshing/baileys/lib/Socket/socket.js:164:30)\n' +
+      '    at uploadPreKeysToServerIfRequired (/home/javavolc/nodevenv/wa.javavolcanorendezvous.com/16/lib/node_modules/@adiwajshing/baileys/lib/Socket/socket.js:190:35)\n' +
+      '    at WebSocket.<anonymous> (/home/javavolc/nodevenv/wa.javavolcanorendezvous.com/16/lib/node_modules/@adiwajshing/baileys/lib/Socket/socket.js:406:15)\n' +
+      '    at WebSocket.emit (node:events:513:28)\n' +
+      '    at /home/javavolc/nodevenv/wa.javavolcanorendezvous.com/16/lib/node_modules/@adiwajshing/baileys/lib/Socket/socket.js:221:35\n' +
+      '    at Object.decodeFrame (/home/javavolc/nodevenv/wa.javavolcanorendezvous.com/16/lib/node_modules/@adiwajshing/baileys/lib/Utils/noise-handler.js:131:17)\n' +
+      '    at WebSocket.onMessageRecieved (/home/javavolc/nodevenv/wa.javavolcanorendezvous.com/16/lib/node_modules/@adiwajshing/baileys/lib/Socket/socket.js:197:15)'
+  },
+  isBoom: true,
+  isServer: false,
+  output: {
+    statusCode: 408,
+    payload: {
+      statusCode: 408,
+      error: 'Request Time-out',
+      message: 'Timed Out'
+    },
+    headers: {}
+  }
+}
