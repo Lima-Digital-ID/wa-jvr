@@ -82,7 +82,7 @@ if(post("username")){
                                         
                                     </form>
                                     <div class="card-body text-center">
-                                        <a  href="https://javavolcanorendezvous.com" target="_blank">JVR WA</a>
+                                        <a  href="https://javavolcanorendezvous.com" target="_blank">JVR WA APP</a>
                                     </div>
                                     <!--<div class="alert alert-success text-center" role="alert">Multi Device Support!</div>-->
                                 </div>
