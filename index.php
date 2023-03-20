@@ -100,7 +100,7 @@ $totalgagal = "";
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?= $_SESSION['username'] ?></span>
-                                <img class="img-profile rounded-circle" src="<? echo $img ?>">
+                                <img class="img-profile rounded-circle" src="<?= $img ?>">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -383,7 +383,7 @@ $totalgagal = "";
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.0/socket.io.js" integrity="sha512-+l9L4lMTFNy3dEglQpprf7jQBhQsQ3/WvOnjaN/+/L4i0jOstgScV0q2TjfvRF4V+ZePMDuZYIQtg5T4MKr+MQ==" crossorigin="anonymous"></script>
     <script>
         var socket = io();
-        var number = <? echo $nomor ?>
+        var number = <?= $nomor ?>
     
        socket.emit('StartConnection', number)
        
